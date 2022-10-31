@@ -17,7 +17,7 @@ public static void main(String[] args) {
 String NS = "";
 // lire le model a partir d'une ontologie
 Model model = JenaEngine.readModel("data/Game.owl");
-
+System.out.println("working");
 if (model != null) {
 //lire le Namespace de l’ontologie
 NS = model.getNsPrefixURI("");

@@ -1,542 +1,451 @@
 <?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9"
      xml:base="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9">
-    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Declaration>
-        <Class IRI="#DifficultValuePartition"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Easy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Game"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Genre"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Hard"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LeagueOfLegends"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LinuxPlatform"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#MacOSPlatform"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Normal"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Online"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Platform"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Player"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Puzzle"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#RolePlayGame"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Sudoku"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WindowsPlatform"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WorldOfWarcraft"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasDifficulty"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasGenre"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasPlatform"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#creationDate"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#name"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Chess"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#LeagueOfLegends"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Soduku"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Titris"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#WorldOfWarCraft"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#candyCrash"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#centos"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#easy"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#hard"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#mac10.5"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#multiPlayer"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#normal"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#online"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#playRoleGame"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#puzzle"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#singlePlayer"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#windows10"/>
-    </Declaration>
-    <EquivalentClasses>
-        <Class IRI="#DifficultValuePartition"/>
-        <ObjectUnionOf>
-            <Class IRI="#Easy"/>
-            <Class IRI="#Hard"/>
-            <Class IRI="#Normal"/>
-        </ObjectUnionOf>
-    </EquivalentClasses>
-    <SubClassOf>
-        <Class IRI="#Easy"/>
-        <Class IRI="#DifficultValuePartition"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Game"/>
-        <Class abbreviatedIRI="owl:Thing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Hard"/>
-        <Class IRI="#DifficultValuePartition"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LeagueOfLegends"/>
-        <Class IRI="#Game"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LinuxPlatform"/>
-        <Class IRI="#Platform"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MacOSPlatform"/>
-        <Class IRI="#Platform"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Normal"/>
-        <Class IRI="#DifficultValuePartition"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Online"/>
-        <Class IRI="#Genre"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Player"/>
-        <Class IRI="#Genre"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Puzzle"/>
-        <Class IRI="#Genre"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RolePlayGame"/>
-        <Class IRI="#Genre"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Sudoku"/>
-        <Class IRI="#Game"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WindowsPlatform"/>
-        <Class IRI="#Platform"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WorldOfWarcraft"/>
-        <Class IRI="#Game"/>
-    </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#DifficultValuePartition"/>
-        <Class IRI="#Game"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Easy"/>
-        <Class IRI="#Hard"/>
-        <Class IRI="#Normal"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Game"/>
-        <Class IRI="#Genre"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Game"/>
-        <Class IRI="#Platform"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#LinuxPlatform"/>
-        <Class IRI="#MacOSPlatform"/>
-        <Class IRI="#WindowsPlatform"/>
-    </DisjointClasses>
-    <ClassAssertion>
-        <Class IRI="#Game"/>
-        <NamedIndividual IRI="#Chess"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#LeagueOfLegends"/>
-        <NamedIndividual IRI="#LeagueOfLegends"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Sudoku"/>
-        <NamedIndividual IRI="#Soduku"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Game"/>
-        <NamedIndividual IRI="#Titris"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#WorldOfWarcraft"/>
-        <NamedIndividual IRI="#WorldOfWarCraft"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Game"/>
-        <NamedIndividual IRI="#candyCrash"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#LinuxPlatform"/>
-        <NamedIndividual IRI="#centos"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Easy"/>
-        <NamedIndividual IRI="#easy"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Hard"/>
-        <NamedIndividual IRI="#hard"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#MacOSPlatform"/>
-        <NamedIndividual IRI="#mac10.5"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Player"/>
-        <NamedIndividual IRI="#multiPlayer"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Normal"/>
-        <NamedIndividual IRI="#normal"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Online"/>
-        <NamedIndividual IRI="#online"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#RolePlayGame"/>
-        <NamedIndividual IRI="#playRoleGame"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Puzzle"/>
-        <NamedIndividual IRI="#puzzle"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Player"/>
-        <NamedIndividual IRI="#singlePlayer"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#WindowsPlatform"/>
-        <NamedIndividual IRI="#windows10"/>
-    </ClassAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasDifficulty"/>
-        <NamedIndividual IRI="#Chess"/>
-        <NamedIndividual IRI="#hard"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasGenre"/>
-        <NamedIndividual IRI="#Chess"/>
-        <NamedIndividual IRI="#multiPlayer"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasPlatform"/>
-        <NamedIndividual IRI="#Chess"/>
-        <NamedIndividual IRI="#centos"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasDifficulty"/>
-        <NamedIndividual IRI="#LeagueOfLegends"/>
-        <NamedIndividual IRI="#easy"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasGenre"/>
-        <NamedIndividual IRI="#LeagueOfLegends"/>
-        <NamedIndividual IRI="#multiPlayer"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasPlatform"/>
-        <NamedIndividual IRI="#LeagueOfLegends"/>
-        <NamedIndividual IRI="#windows10"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasDifficulty"/>
-        <NamedIndividual IRI="#Soduku"/>
-        <NamedIndividual IRI="#normal"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasGenre"/>
-        <NamedIndividual IRI="#Soduku"/>
-        <NamedIndividual IRI="#singlePlayer"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasPlatform"/>
-        <NamedIndividual IRI="#Soduku"/>
-        <NamedIndividual IRI="#mac10.5"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasPlatform"/>
-        <NamedIndividual IRI="#Titris"/>
-        <NamedIndividual IRI="#centos"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasDifficulty"/>
-        <NamedIndividual IRI="#WorldOfWarCraft"/>
-        <NamedIndividual IRI="#hard"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasGenre"/>
-        <NamedIndividual IRI="#WorldOfWarCraft"/>
-        <NamedIndividual IRI="#online"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasGenre"/>
-        <NamedIndividual IRI="#WorldOfWarCraft"/>
-        <NamedIndividual IRI="#playRoleGame"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasPlatform"/>
-        <NamedIndividual IRI="#WorldOfWarCraft"/>
-        <NamedIndividual IRI="#windows10"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasDifficulty"/>
-        <NamedIndividual IRI="#candyCrash"/>
-        <NamedIndividual IRI="#normal"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasGenre"/>
-        <NamedIndividual IRI="#candyCrash"/>
-        <NamedIndividual IRI="#singlePlayer"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasPlatform"/>
-        <NamedIndividual IRI="#candyCrash"/>
-        <NamedIndividual IRI="#mac10.5"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasGenre"/>
-        <NamedIndividual IRI="#windows10"/>
-        <NamedIndividual IRI="#singlePlayer"/>
-    </ObjectPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#creationDate"/>
-        <NamedIndividual IRI="#Chess"/>
-        <Literal>04-03-2005</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#Chess"/>
-        <Literal>Chess</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#creationDate"/>
-        <NamedIndividual IRI="#LeagueOfLegends"/>
-        <Literal>31-10-2009</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#LeagueOfLegends"/>
-        <Literal>LeagueOfLegends</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#creationDate"/>
-        <NamedIndividual IRI="#Soduku"/>
-        <Literal>02-08-2001</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#Soduku"/>
-        <Literal>Soduku</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#creationDate"/>
-        <NamedIndividual IRI="#Titris"/>
-        <Literal>14-09-2000</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#Titris"/>
-        <Literal>Titris</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#creationDate"/>
-        <NamedIndividual IRI="#WorldOfWarCraft"/>
-        <Literal>22-12-2004</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#WorldOfWarCraft"/>
-        <Literal>WorldOfWarCraft</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#creationDate"/>
-        <NamedIndividual IRI="#candyCrash"/>
-        <Literal>06-08-2010</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#candyCrash"/>
-        <Literal>candyCrash</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#creationDate"/>
-        <NamedIndividual IRI="#centos"/>
-        <Literal>08-05-2006</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#centos"/>
-        <Literal>centos</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#easy"/>
-        <Literal>easy</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#hard"/>
-        <Literal>hard</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#creationDate"/>
-        <NamedIndividual IRI="#mac10.5"/>
-        <Literal>14-10-2007</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#mac10.5"/>
-        <Literal>mac10.5</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#multiPlayer"/>
-        <Literal>multiPlayer</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#normal"/>
-        <Literal>normal</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#online"/>
-        <Literal>online</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#playRoleGame"/>
-        <Literal>playRoleGame</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#singlePlayer"/>
-        <Literal>singlePlayer</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#creationDate"/>
-        <NamedIndividual IRI="#windows10"/>
-        <Literal>12-11-2003</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#windows10"/>
-        <Literal>windows10</Literal>
-    </DataPropertyAssertion>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasDifficulty"/>
-    </FunctionalObjectProperty>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasDifficulty"/>
-        <Class IRI="#Game"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasPlatform"/>
-        <Class IRI="#Game"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasDifficulty"/>
-        <Class IRI="#DifficultValuePartition"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasPlatform"/>
-        <Class IRI="#Platform"/>
-    </ObjectPropertyRange>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#name"/>
-    </FunctionalDataProperty>
-    <DataPropertyDomain>
-        <DataProperty IRI="#creationDate"/>
-        <Class IRI="#Game"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#name"/>
-        <Class IRI="#Game"/>
-    </DataPropertyDomain>
-    <DataPropertyRange>
-        <DataProperty IRI="#creationDate"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#name"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-</Ontology>
+     xmlns:untitled-ontology-9="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#hasDifficulty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#hasDifficulty">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#DifficultValuePartition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#hasGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#hasGenre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#hasPlatform -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#hasPlatform">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Platform"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#creationDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#creationDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Game"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#name">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Game"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#DifficultValuePartition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#DifficultValuePartition">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Easy"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Hard"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Normal"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Easy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Easy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#DifficultValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Game">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Genre"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Genre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Hard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Hard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#DifficultValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#LeagueOfLegends -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#LeagueOfLegends">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#LinuxPlatform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#LinuxPlatform">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#MacOSPlatform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#MacOSPlatform">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Normal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Normal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#DifficultValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Online -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Online">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Platform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Platform"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Player">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Puzzle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Puzzle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#RolePlayGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#RolePlayGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Sudoku -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Sudoku">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#WindowsPlatform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#WindowsPlatform">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#WorldOfWarcraft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#WorldOfWarcraft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Chess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Chess">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Game"/>
+        <untitled-ontology-9:hasDifficulty rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#hard"/>
+        <untitled-ontology-9:hasGenre rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#multiPlayer"/>
+        <untitled-ontology-9:hasPlatform rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#centos"/>
+        <untitled-ontology-9:creationDate>04-03-2005</untitled-ontology-9:creationDate>
+        <untitled-ontology-9:name>Chess</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#LeagueOfLegends -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#LeagueOfLegends">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#LeagueOfLegends"/>
+        <untitled-ontology-9:hasDifficulty rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#easy"/>
+        <untitled-ontology-9:hasGenre rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#multiPlayer"/>
+        <untitled-ontology-9:hasPlatform rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#windows10"/>
+        <untitled-ontology-9:creationDate>31-10-2009</untitled-ontology-9:creationDate>
+        <untitled-ontology-9:name>LeagueOfLegends</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Soduku -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Soduku">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Sudoku"/>
+        <untitled-ontology-9:hasDifficulty rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#normal"/>
+        <untitled-ontology-9:hasGenre rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#singlePlayer"/>
+        <untitled-ontology-9:hasPlatform rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#mac10.5"/>
+        <untitled-ontology-9:creationDate>02-08-2001</untitled-ontology-9:creationDate>
+        <untitled-ontology-9:name>Soduku</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Titris -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Titris">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Game"/>
+        <untitled-ontology-9:hasPlatform rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#centos"/>
+        <untitled-ontology-9:creationDate>14-09-2000</untitled-ontology-9:creationDate>
+        <untitled-ontology-9:name>Titris</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#WorldOfWarCraft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#WorldOfWarCraft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#WorldOfWarcraft"/>
+        <untitled-ontology-9:hasDifficulty rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#hard"/>
+        <untitled-ontology-9:hasGenre rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#online"/>
+        <untitled-ontology-9:hasGenre rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#playRoleGame"/>
+        <untitled-ontology-9:hasPlatform rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#windows10"/>
+        <untitled-ontology-9:creationDate>22-12-2004</untitled-ontology-9:creationDate>
+        <untitled-ontology-9:name>WorldOfWarCraft</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#candyCrash -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#candyCrash">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Game"/>
+        <untitled-ontology-9:hasDifficulty rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#normal"/>
+        <untitled-ontology-9:hasGenre rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#singlePlayer"/>
+        <untitled-ontology-9:hasPlatform rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#mac10.5"/>
+        <untitled-ontology-9:creationDate>06-08-2010</untitled-ontology-9:creationDate>
+        <untitled-ontology-9:name>candyCrash</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#centos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#centos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#LinuxPlatform"/>
+        <untitled-ontology-9:creationDate>08-05-2006</untitled-ontology-9:creationDate>
+        <untitled-ontology-9:name>centos</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#easy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#easy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Easy"/>
+        <untitled-ontology-9:name>easy</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#hard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#hard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Hard"/>
+        <untitled-ontology-9:name>hard</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#mac10.5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#mac10.5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#MacOSPlatform"/>
+        <untitled-ontology-9:creationDate>14-10-2007</untitled-ontology-9:creationDate>
+        <untitled-ontology-9:name>mac10.5</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#multiPlayer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#multiPlayer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Player"/>
+        <untitled-ontology-9:name>multiPlayer</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#normal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#normal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Normal"/>
+        <untitled-ontology-9:name>normal</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#online -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#online">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Online"/>
+        <untitled-ontology-9:name>online</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#playRoleGame -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#playRoleGame">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#RolePlayGame"/>
+        <untitled-ontology-9:name>playRoleGame</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#puzzle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#puzzle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Puzzle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#singlePlayer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#singlePlayer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Player"/>
+        <untitled-ontology-9:name>singlePlayer</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#windows10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#windows10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#WindowsPlatform"/>
+        <untitled-ontology-9:hasGenre rdf:resource="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#singlePlayer"/>
+        <untitled-ontology-9:creationDate>12-11-2003</untitled-ontology-9:creationDate>
+        <untitled-ontology-9:name>windows10</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Easy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Hard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#Normal"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#LinuxPlatform"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#MacOSPlatform"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9#WindowsPlatform"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
 
 
 
