@@ -13,9 +13,6 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#Chess"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#DifficultValuePartition"/>
     </Declaration>
     <Declaration>
@@ -40,12 +37,6 @@
         <Class IRI="#MacOSPlatform"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MultiPlayer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#NameGame"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Normal"/>
     </Declaration>
     <Declaration>
@@ -55,13 +46,13 @@
         <Class IRI="#Platform"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Player"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Puzzle"/>
     </Declaration>
     <Declaration>
         <Class IRI="#RolePlayGame"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SinglePlayer"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Sudoku"/>
@@ -81,6 +72,63 @@
     <Declaration>
         <ObjectProperty IRI="#hasPlatform"/>
     </Declaration>
+    <Declaration>
+        <DataProperty IRI="#creationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chess"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LeagueOfLegends"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Soduku"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Titris"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WorldOfWarCraft"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#candyCrash"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#centos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#easy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mac10.5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#multiPlayer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#normal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#online"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#playRoleGame"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#puzzle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#singlePlayer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#windows10"/>
+    </Declaration>
     <EquivalentClasses>
         <Class IRI="#DifficultValuePartition"/>
         <ObjectUnionOf>
@@ -89,62 +137,6 @@
             <Class IRI="#Normal"/>
         </ObjectUnionOf>
     </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#NameGame"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Game"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasGenre"/>
-                <Class IRI="#MultiPlayer"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <SubClassOf>
-        <Class IRI="#Chess"/>
-        <Class IRI="#NameGame"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Chess"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasDifficulty"/>
-            <Class IRI="#Normal"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Chess"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasGenre"/>
-            <Class IRI="#MultiPlayer"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Chess"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasGenre"/>
-            <Class IRI="#SinglePlayer"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Chess"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasPlatform"/>
-            <Class IRI="#LinuxPlatform"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Chess"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasPlatform"/>
-            <Class IRI="#MacOSPlatform"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Chess"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasPlatform"/>
-            <Class IRI="#WindowsPlatform"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
     <SubClassOf>
         <Class IRI="#Easy"/>
         <Class IRI="#DifficultValuePartition"/>
@@ -159,7 +151,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LeagueOfLegends"/>
-        <Class IRI="#NameGame"/>
+        <Class IRI="#Game"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LinuxPlatform"/>
@@ -170,15 +162,15 @@
         <Class IRI="#Platform"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MultiPlayer"/>
-        <Class IRI="#Genre"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Normal"/>
         <Class IRI="#DifficultValuePartition"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Online"/>
+        <Class IRI="#Genre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Player"/>
         <Class IRI="#Genre"/>
     </SubClassOf>
     <SubClassOf>
@@ -190,12 +182,8 @@
         <Class IRI="#Genre"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#SinglePlayer"/>
-        <Class IRI="#Genre"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Sudoku"/>
-        <Class IRI="#NameGame"/>
+        <Class IRI="#Game"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WindowsPlatform"/>
@@ -203,14 +191,8 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WorldOfWarcraft"/>
-        <Class IRI="#NameGame"/>
+        <Class IRI="#Game"/>
     </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#Chess"/>
-        <Class IRI="#LeagueOfLegends"/>
-        <Class IRI="#Sudoku"/>
-        <Class IRI="#WorldOfWarcraft"/>
-    </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#DifficultValuePartition"/>
         <Class IRI="#Game"/>
@@ -233,13 +215,289 @@
         <Class IRI="#MacOSPlatform"/>
         <Class IRI="#WindowsPlatform"/>
     </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#MultiPlayer"/>
+    <ClassAssertion>
+        <Class IRI="#Game"/>
+        <NamedIndividual IRI="#Chess"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LeagueOfLegends"/>
+        <NamedIndividual IRI="#LeagueOfLegends"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sudoku"/>
+        <NamedIndividual IRI="#Soduku"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Game"/>
+        <NamedIndividual IRI="#Titris"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorldOfWarcraft"/>
+        <NamedIndividual IRI="#WorldOfWarCraft"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Game"/>
+        <NamedIndividual IRI="#candyCrash"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LinuxPlatform"/>
+        <NamedIndividual IRI="#centos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Easy"/>
+        <NamedIndividual IRI="#easy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hard"/>
+        <NamedIndividual IRI="#hard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MacOSPlatform"/>
+        <NamedIndividual IRI="#mac10.5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Player"/>
+        <NamedIndividual IRI="#multiPlayer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Normal"/>
+        <NamedIndividual IRI="#normal"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Online"/>
-        <Class IRI="#Puzzle"/>
+        <NamedIndividual IRI="#online"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#RolePlayGame"/>
-        <Class IRI="#SinglePlayer"/>
-    </DisjointClasses>
+        <NamedIndividual IRI="#playRoleGame"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Puzzle"/>
+        <NamedIndividual IRI="#puzzle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Player"/>
+        <NamedIndividual IRI="#singlePlayer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WindowsPlatform"/>
+        <NamedIndividual IRI="#windows10"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDifficulty"/>
+        <NamedIndividual IRI="#Chess"/>
+        <NamedIndividual IRI="#hard"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#Chess"/>
+        <NamedIndividual IRI="#multiPlayer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlatform"/>
+        <NamedIndividual IRI="#Chess"/>
+        <NamedIndividual IRI="#centos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDifficulty"/>
+        <NamedIndividual IRI="#LeagueOfLegends"/>
+        <NamedIndividual IRI="#easy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#LeagueOfLegends"/>
+        <NamedIndividual IRI="#multiPlayer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlatform"/>
+        <NamedIndividual IRI="#LeagueOfLegends"/>
+        <NamedIndividual IRI="#windows10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDifficulty"/>
+        <NamedIndividual IRI="#Soduku"/>
+        <NamedIndividual IRI="#normal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#Soduku"/>
+        <NamedIndividual IRI="#singlePlayer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlatform"/>
+        <NamedIndividual IRI="#Soduku"/>
+        <NamedIndividual IRI="#mac10.5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlatform"/>
+        <NamedIndividual IRI="#Titris"/>
+        <NamedIndividual IRI="#centos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDifficulty"/>
+        <NamedIndividual IRI="#WorldOfWarCraft"/>
+        <NamedIndividual IRI="#hard"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#WorldOfWarCraft"/>
+        <NamedIndividual IRI="#online"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#WorldOfWarCraft"/>
+        <NamedIndividual IRI="#playRoleGame"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlatform"/>
+        <NamedIndividual IRI="#WorldOfWarCraft"/>
+        <NamedIndividual IRI="#windows10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDifficulty"/>
+        <NamedIndividual IRI="#candyCrash"/>
+        <NamedIndividual IRI="#normal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#candyCrash"/>
+        <NamedIndividual IRI="#singlePlayer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlatform"/>
+        <NamedIndividual IRI="#candyCrash"/>
+        <NamedIndividual IRI="#mac10.5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#windows10"/>
+        <NamedIndividual IRI="#singlePlayer"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#creationDate"/>
+        <NamedIndividual IRI="#Chess"/>
+        <Literal>04-03-2005</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Chess"/>
+        <Literal>Chess</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#creationDate"/>
+        <NamedIndividual IRI="#LeagueOfLegends"/>
+        <Literal>31-10-2009</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#LeagueOfLegends"/>
+        <Literal>LeagueOfLegends</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#creationDate"/>
+        <NamedIndividual IRI="#Soduku"/>
+        <Literal>02-08-2001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Soduku"/>
+        <Literal>Soduku</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#creationDate"/>
+        <NamedIndividual IRI="#Titris"/>
+        <Literal>14-09-2000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Titris"/>
+        <Literal>Titris</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#creationDate"/>
+        <NamedIndividual IRI="#WorldOfWarCraft"/>
+        <Literal>22-12-2004</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#WorldOfWarCraft"/>
+        <Literal>WorldOfWarCraft</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#creationDate"/>
+        <NamedIndividual IRI="#candyCrash"/>
+        <Literal>06-08-2010</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#candyCrash"/>
+        <Literal>candyCrash</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#creationDate"/>
+        <NamedIndividual IRI="#centos"/>
+        <Literal>08-05-2006</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#centos"/>
+        <Literal>centos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#easy"/>
+        <Literal>easy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#hard"/>
+        <Literal>hard</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#creationDate"/>
+        <NamedIndividual IRI="#mac10.5"/>
+        <Literal>14-10-2007</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#mac10.5"/>
+        <Literal>mac10.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#multiPlayer"/>
+        <Literal>multiPlayer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#normal"/>
+        <Literal>normal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#online"/>
+        <Literal>online</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#playRoleGame"/>
+        <Literal>playRoleGame</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#singlePlayer"/>
+        <Literal>singlePlayer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#creationDate"/>
+        <NamedIndividual IRI="#windows10"/>
+        <Literal>12-11-2003</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#windows10"/>
+        <Literal>windows10</Literal>
+    </DataPropertyAssertion>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasDifficulty"/>
     </FunctionalObjectProperty>
@@ -259,6 +517,25 @@
         <ObjectProperty IRI="#hasPlatform"/>
         <Class IRI="#Platform"/>
     </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#name"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#creationDate"/>
+        <Class IRI="#Game"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#Game"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#creationDate"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
 </Ontology>
 
 
