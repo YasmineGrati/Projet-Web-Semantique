@@ -1,0 +1,267 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9">
+    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2022/9/untitled-ontology-9"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Chess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DifficultValuePartition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Easy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Game"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Genre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LeagueOfLegends"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LinuxPlatform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MacOSPlatform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MultiPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NameGame"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Normal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Online"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Platform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Puzzle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RolePlayGame"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SinglePlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sudoku"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WindowsPlatform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WorldOfWarcraft"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDifficulty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGenre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPlatform"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#DifficultValuePartition"/>
+        <ObjectUnionOf>
+            <Class IRI="#Easy"/>
+            <Class IRI="#Hard"/>
+            <Class IRI="#Normal"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#NameGame"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Game"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasGenre"/>
+                <Class IRI="#MultiPlayer"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Chess"/>
+        <Class IRI="#NameGame"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasDifficulty"/>
+            <Class IRI="#Normal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasGenre"/>
+            <Class IRI="#MultiPlayer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasGenre"/>
+            <Class IRI="#SinglePlayer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPlatform"/>
+            <Class IRI="#LinuxPlatform"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPlatform"/>
+            <Class IRI="#MacOSPlatform"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPlatform"/>
+            <Class IRI="#WindowsPlatform"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Easy"/>
+        <Class IRI="#DifficultValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Game"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hard"/>
+        <Class IRI="#DifficultValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LeagueOfLegends"/>
+        <Class IRI="#NameGame"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LinuxPlatform"/>
+        <Class IRI="#Platform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MacOSPlatform"/>
+        <Class IRI="#Platform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MultiPlayer"/>
+        <Class IRI="#Genre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Normal"/>
+        <Class IRI="#DifficultValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Online"/>
+        <Class IRI="#Genre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Puzzle"/>
+        <Class IRI="#Genre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RolePlayGame"/>
+        <Class IRI="#Genre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SinglePlayer"/>
+        <Class IRI="#Genre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sudoku"/>
+        <Class IRI="#NameGame"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WindowsPlatform"/>
+        <Class IRI="#Platform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorldOfWarcraft"/>
+        <Class IRI="#NameGame"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Chess"/>
+        <Class IRI="#LeagueOfLegends"/>
+        <Class IRI="#Sudoku"/>
+        <Class IRI="#WorldOfWarcraft"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DifficultValuePartition"/>
+        <Class IRI="#Game"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Easy"/>
+        <Class IRI="#Hard"/>
+        <Class IRI="#Normal"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Game"/>
+        <Class IRI="#Genre"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Game"/>
+        <Class IRI="#Platform"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LinuxPlatform"/>
+        <Class IRI="#MacOSPlatform"/>
+        <Class IRI="#WindowsPlatform"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MultiPlayer"/>
+        <Class IRI="#Online"/>
+        <Class IRI="#Puzzle"/>
+        <Class IRI="#RolePlayGame"/>
+        <Class IRI="#SinglePlayer"/>
+    </DisjointClasses>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasDifficulty"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDifficulty"/>
+        <Class IRI="#Game"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPlatform"/>
+        <Class IRI="#Game"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDifficulty"/>
+        <Class IRI="#DifficultValuePartition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPlatform"/>
+        <Class IRI="#Platform"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
